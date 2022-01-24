@@ -1,0 +1,47 @@
+[debug] [2021-11-18T20:17:31.538Z] ----------------------------------------------------------------------
+[debug] [2021-11-18T20:17:31.544Z] Command:       /home/student/.nvm/versions/node/v14.18.1/bin/node /home/student/.nvm/versions/node/v14.18.1/bin/firebase init functions
+[debug] [2021-11-18T20:17:31.545Z] CLI Version:   9.22.0
+[debug] [2021-11-18T20:17:31.546Z] Platform:      linux
+[debug] [2021-11-18T20:17:31.546Z] Node Version:  v14.18.1
+[debug] [2021-11-18T20:17:31.546Z] Time:          Thu Nov 18 2021 12:17:31 GMT-0800 (Pacific Standard Time)
+[debug] [2021-11-18T20:17:31.546Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-18T20:17:31.617Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-18T20:17:31.617Z] > authorizing via signed-in user (callianna.priebe@mrjaffesclass.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/student/babyname-336345
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using baby-names-25fd5. 
+[debug] [2021-11-18T20:17:31.629Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/baby-names-25fd5 [none]
+[debug] [2021-11-18T20:17:32.003Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/baby-names-25fd5 403
+[debug] [2021-11-18T20:17:32.004Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/baby-names-25fd5 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-11-18T20:17:32.006Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-11-18T20:17:32.109Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/home/student/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/home/student/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/lib/apiv2.js:241:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (/home/student/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async Object.getFirebaseProject (/home/student/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/lib/management/projects.js:290:21)
+    at async Object.doSetup [as project] (/home/student/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/lib/init/features/project.js:77:27)
+    at async init (/home/student/.nvm/versions/node/v14.18.1/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project baby-names-25fd5. Please make sure the project exists and your account has permission to access it.

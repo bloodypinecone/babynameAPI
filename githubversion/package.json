@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "big-bang-theory": "github:rogerjaffe/big-bang-theory",
+    "us-baby-names": "^1.0.0"
+  }
+}
